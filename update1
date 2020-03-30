@@ -16,7 +16,7 @@
 		{
 			temp[i]=burstTime1[i];
 		} 
-		printf("\nProcess ID\tBurst Time\t Turnaround Time\t Waiting Time\n");
+		printf("\nProcess \tBurst Time\t Turnaround Time\t Waiting Time\n");
 		x=j;
 	    for(i=0,total=0;x!=0;) 
 	    { 
@@ -95,7 +95,7 @@
 	    }
 	    avgWaitTime2=sum/k;
 	    sum=0;
-	    printf("\nProcess ID\t\tBurst Time\t Waiting Time\t Turnaround Time\n");
+	    printf("\nProcess \t\tBurst Time\t Waiting Time\t Turnaround Time\n");
 	    for(i=0;i<k;i++)
 	    {
 	    	turnaroundTime2[i]=burstTime2[i]+waitingTime2[i];
@@ -133,7 +133,7 @@
 	            waitingTime3[i]=waitingTime3[i]+burstTime3[p];
 	        }
 	    }
-	    printf("\nProcess\t\tBurst Time\tWaiting Time\tTurnaround Time\n");
+	    printf("\nProcess \t\tBurst Time\tWaiting Time\tTurnaround Time\n");
 	    for(i=0;i<l;i++)
 	    {
 	        turnaroundTime3[i]=burstTime3[i]+waitingTime3[i];
