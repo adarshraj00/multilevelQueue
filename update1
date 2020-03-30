@@ -1,26 +1,14 @@
-#include<stdio.h>
+	#include<stdio.h>
 	int arrivalTime1[30],arrivalTime2[30],priority2[30],process2[30],arrivalTime3[30];
 	int burstTime1[30],burstTime2[30],burstTime3[30];
-	
-
 	int Total=0,t1=0,t2=0,t3=0;
-	
-
 	int n,i,ar[30],brst[30],pr[30],j=0,k=0,l=0;
-	
-
 	int total,x,temp[30],counter=0;
 	float avgWaitTime1=0.0,avgTurnaroundTime1=0.0;
-	
-
 	int p,waitingTime3[30],turnaroundTime3[30];
 	float avgWaitTime3=0.0,avgTurnaroundTime3=0.0;
-	
-
 	int position,q,temp1,sum=0,waitingTime2[30],turnaroundTime2[30];
 	float avgWaitTime2,avgTurnaroundTime2;
-	
-
 	void roundRobin()
 	{
 		printf("Time Quantum for Queue1 is 4\n");
@@ -71,8 +59,6 @@
 	    printf("\nAverage Waiting Time:%f",avgWaitTime1); 
 	    printf("\nAverage Turnaround Time:%f\n",avgTurnaroundTime1); 
 	}
-	
-
 	void priority()
 	{
 		for(i=0;i<k;i++)
@@ -118,8 +104,7 @@
 	    }
 	    avgTurnaroundTime2=sum/k;
 	    printf("\nAverage Waiting Time:\t%f",avgWaitTime2);
-	    printf("\nAverage Turnaround Time:\t%f\n",avgTurnaroundTime2);
-	    
+	    printf("\nAverage Turnaround Time:\t%f\n",avgTurnaroundTime2);   
 	    for(i=0;i<k;i++)
 	    {
 	    	while(burstTime2[i]!=0)
@@ -136,11 +121,7 @@
 				}
 			}
 		}
-	
-
 	}
-	
-
 	void fcfs()
 	{
 		waitingTime3[0] = 0;   
@@ -181,8 +162,6 @@
 			}
 		}
 	}
-	
-
 	void roundRobin1()
 	{
 		printf("Time Quantum between the 3 queues is 10\n");
@@ -220,8 +199,6 @@
 			}
 		}
 	}
-	
-
 	int main()
 	{
 		printf("Enter the no. of processes\n");
@@ -267,8 +244,7 @@
 				l++;
 				t3=t3+brst[i];
 			}
-		}
-		
+		}	
 		roundRobin1();
 		roundRobin();
 		fcfs();
