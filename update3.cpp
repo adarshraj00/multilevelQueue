@@ -146,7 +146,7 @@
 	    for(i=0;i<l;i++)
 	    	while(burstTime3[i]!=0)
 	    		if(burstTime3[i]>10)
-	    		{
+				{	
 					printf("\nProcess[%d] of Queue3 is running for 10 units of time",i+1);
 					burstTime3[i]=burstTime3[i]-10;
 				}
